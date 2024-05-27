@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.tetris {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.tetris .tetris__grid {
+  display: grid;
+  gap: 1px;
+  width: auto;
+  height: auto;
+  padding: 1px;
+  background: #707787;
+}
+.tetris .tetris__grid > div {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+}
+.tetris .tetris__grid > div.ghost {
+  background: #cecece;
+}
+.tetris .tetris__next-figure-wrap {
+  background: #fff;
+  position: absolute;
+  right: 300px;
+  top: 200px;
+}
+.tetris .tetris__next-figure {
+  margin: 20px auto 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  grid-auto-columns: 20px;
+  grid-auto-rows: 20px;
+  grid-template-columns: repeat(3, 20px);
+  gap: 1px;
+  width: auto;
+  height: auto;
+  padding: 1px;
+  background: transparent;
+}
+.tetris .tetris__next-figure > div {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+.tetris .tetris__points-wrap {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.tetris .tetris__controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.tetris .tetris__play {
+  display: block;
+}
+.tetris .tetris__pause {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
