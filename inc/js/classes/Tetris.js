@@ -582,10 +582,12 @@ export default class Tetris {
 
     #playPlaceFigureSound() {
         this.#soundPlaceFigure.currentTime = 0;
+        this.#soundPlaceFigure.volume = 0.9;
         this.#soundPlaceFigure.play();
     }
     #playGameSound() {
         this.#soundGame.loop = true;
+        this.#soundGame.volume = 0.4;
         this.#soundGame.currentTime = 0;
         this.#soundGame.play();
     }
@@ -595,6 +597,7 @@ export default class Tetris {
     }
     #GameOverSound() {
         this.#soundGameOver.currentTime = 0;
+        this.#soundGameOver.volume = 0.4;
         this.#soundGameOver.play();
     }
 }
